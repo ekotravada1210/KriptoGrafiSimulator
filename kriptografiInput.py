@@ -72,11 +72,12 @@ try:
     #for i in range(2):
     #    for j in range(2):
     #        key[i][j] = int(input(f"Masukkan Key X{i+1}{j+1}: "))
-    key = [[0]*2 for _ in range(2)]
+    dimensi=int(input("dimensi Matriks :"))
+    key = [[0]*dimensi for _ in range(dimensi)]
 
-    for i in range(2):
+    for i in range(dimensi):
         baris = input(f"Masukkan baris {i+1} (pisahkan dengan spasi): ").split()
-        for j in range(2):
+        for j in range(dimensi):
             key[i][j] = int(baris[j])
 
     print("Matriks Key:")
@@ -101,9 +102,9 @@ try:
 
     #key = [[0]*2 for _ in range(2)]
 
-    for i in range(2):
+    for i in range(dimensi):
         baris = input(f"Masukkan baris {i+1} (pisahkan dengan spasi): ").split()
-        for j in range(2):
+        for j in range(dimensi):
             key[i][j] = int(baris[j])
     
     print("Matriks Key:")
